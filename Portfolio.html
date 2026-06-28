@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayakumar Murugan - Tech Blog</title>
+    <style>
+        /* Flat UI Color Palette */
+        :root {
+            --primary: #2c3e50; /* Midnight Blue */
+            --secondary: #34495e; /* Wet Asphalt */
+            --accent: #3498db; /* Peter River */
+            --background: #ecf0f1; /* Clouds */
+            --card-bg: #ffffff; /* White */
+            --text-main: #333333;
+            --text-light: #7f8c8d; /* Asbestos */
+            --tag-1: #1abc9c; /* Turquoise */
+            --tag-2: #9b59b6; /* Amethyst */
+            --tag-3: #e67e22; /* Carrot */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Flat UI Card */
+        .blog-card {
+            background-color: var(--card-bg);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-image {
+            height: 150px;
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .card-excerpt {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        /* Tags */
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 5px 10px;
+            border-radius: 3px;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .tag.ai { background-color: var(--tag-1); }
+        .tag.cloud { background-color: var(--tag-2); }
+        .tag.architecture { background-color: var(--tag-3); }
+
+        /* Flat Button */
+        .read-more {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .read-more:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary);
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Vijayakumar Murugan[cite: 1]</h1>
+        <h2>Full Stack Engineer / Technical Leader[cite: 1]</h2>
+        <div class="contact-info">
+            Chennai, TN, India | mvkr.aambal@gmail.com | +91-8939079899[cite: 1]
+        </div>
+    </header>
+
+    <div class="container">
+        <h3 class="section-title">Latest Articles & Insights</h3>
+        
+        <div class="blog-grid">
+            
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+                <div class="card-image" style="background-color: #34495e;">Generative AI</div>
+                <div class="card-content">
+                    <div class="tags">
+                        <span class="tag ai">Python[cite: 1]</span>
+                        <span class="tag ai">LangChain[cite: 1]</span>
+                    </div>
+                    <h3 class="card-title">Navigating the Shift to AI: My Experience with Generative AI POCs</h3>
+                    <p class="card-excerpt">A deep dive into architecting a Generative AI Proof of Concept to automate enterprise workflows, leveraging Retrieval-Augmented Generation (RAG) to query complex internal technical documentation[cite: 1].</p>
+                    <a href="#" class="read-more">Read Article</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+                <div class="card-image" style="background-color: #e67e22;">Cloud Architecture</div>
+                <div class="card-content">
+                    <div class="tags">
+                        <span class="tag architecture">Microservices[cite: 1]</span>
+                        <span class="tag architecture">Event-Driven[cite: 1]</span>
+                    </div>
+                    <h3 class="card-title">Modernizing Legacy Platforms for the Enterprise</h3>
+                    <p class="card-excerpt">Discover strategies for migrating legacy platforms to modern secure architectures, and how moving from legacy reporting tools reduced operational latency by 25%[cite: 1].</p>
+                    <a href="#" class="read-more">Read Article</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card">
+                <div class="card-image" style="background-color: #9b59b6;">AWS Solutions</div>
+                <div class="card-content">
+                    <div class="tags">
+                        <span class="tag cloud">AWS Lambda[cite: 1]</span>
+                        <span class="tag cloud">API Gateway[cite: 1]</span>
+                    </div>
+                    <h3 class="card-title">Building Scalable Web Crawlers in the Cloud</h3>
+                    <p class="card-excerpt">Leveraging AWS cloud services (S3, EC2, Lambda, API Gateway) to build scalable, high-availability, and high-performance web crawler solutions while ensuring enterprise compliance[cite: 1].</p>
+                    <a href="#" class="read-more">Read Article</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vijayakumar Murugan. Built with Flat UI Design Principles.</p>
+    </footer>
+
+</body>
+</html>
